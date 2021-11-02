@@ -1,30 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 import Amplify from 'aws-amplify';
 import aws_exports from './aws-exports';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, NavbarBrand, NavbarToggler, Table, Collapse, Nav, NavItem, NavLink, NavbarText, DropdownItem, DropdownMenu, DropdownToggle, UncontrolledDropdown } from 'reactstrap';
+import { CheckCircleTwoTone, CloseCircleTwoTone } from '@ant-design/icons'
+import { Route, Link, Redirect } from "wouter"
+import inicio from './pages/Inicio';
+import Reportes from './pages/Reportes';
+import Navbar2 from './layouts/navBar'
+
 Amplify.configure(aws_exports);
+
+
+//<Route from="/" to="/Inicio" />
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <AmplifySignOut />
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+
+        
+          <Navbar2 />
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <Route path='/Inicio' component={inicio}/>
+        <Route path='/Reportes' component={Reportes}/>
+        
       </div>
     );
   }
