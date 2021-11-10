@@ -56,7 +56,7 @@ import { Route, Link, Redirect } from "wouter"
                 fixed="top"
             >
                 <NavbarBrand href="/Inicio" >
-                    RFtek Manilla IOT
+                    Band IOT Dates
                 </NavbarBrand>
                 <NavbarToggler  />
                 <Collapse navbar>

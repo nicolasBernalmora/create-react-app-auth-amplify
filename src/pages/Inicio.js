@@ -105,6 +105,7 @@ function Inicio() {
 
 
     const [LimitAct, setLimitAct] = useState(["30", "70"]);
+
     const [LimitHe, setLimitHe] = useState(["0", "250"]);
     const [LNombres, setLNombres] = useState(["name 1", "name 2", "name 3", "name 4", "name 5", "name 6", "name 7", "name 8"])
     const [colores, setcolores] = useState(["white", "white", "white", "white", "white", "white", "white", "white"])
@@ -174,11 +175,10 @@ function Inicio() {
         var Activity = parseInt(data["Items"][h]["Activity"]);
         var tampervar = parseInt(data["Items"][h]["Tamper"]);
         var levelbatery = parseInt(data["Items"][h]["BateryLevel"]);
-        LimitHeart(heartdate, h);
 
+
+        LimitHeart(heartdate, h);
         LimitActi(Activity, h);
-        //LimitHeart(h);
-        //console.log(h);
         BatteryAlarm(levelbatery, h);
         tamperAlarm(tampervar, h);
 
@@ -199,7 +199,7 @@ function Inicio() {
             colores3Stados[id] = "red"
         }
         else if (data < alto) {
-            colores3Stados[id] = "white"
+            colores3Stados[id] = "green"
         }
         else {
             // console.log("no pase el limite bajo")
@@ -221,22 +221,22 @@ function Inicio() {
             //console.log("entre a nivel bajo")
             //console.log(data)
 
-            colores2Stados[id] = "green"
+            colores2Stados[id] = "red"
         }
         else {
             // console.log("no pase el limite bajo")
-            colores2Stados[id] = "white"
+            colores2Stados[id] = "green"
         }
 
         if (data > alto) {
             //console.log("alarma nivel alto")
             // console.log(data)
 
-            colores1Stados[id] = "green"
+            colores1Stados[id] = "red"
         }
         else {
             //console.log("no pase el limite alto")
-            colores1Stados[id] = "white"
+            colores1Stados[id] = "green"
         }
     }
 
@@ -244,7 +244,7 @@ function Inicio() {
         var id = parseInt(items["Items"][i]["ID"])
 
         if (data == 0) {
-            colores4Stados[id] = "white"
+            colores4Stados[id] = "green"
         }
         else {
             colores4Stados[id] = "red"
@@ -254,11 +254,11 @@ function Inicio() {
     const BatteryAlarm = (data, i) => {
         var id = parseInt(items["Items"][i]["ID"])
         if (data == 0) {
-            colores5Stados[id] = "red"
+            colores5Stados[id] = "green"
             //console.log(colores5Stados[i])
         }
         else {
-            colores5Stados[id] = "green"
+            colores5Stados[id] = "red"
 
         }
 
