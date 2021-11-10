@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 import Amplify from 'aws-amplify';
@@ -7,33 +7,34 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, NavbarBrand, NavbarToggler, Table, Collapse, Nav, NavItem, NavLink, NavbarText, DropdownItem, DropdownMenu, DropdownToggle, UncontrolledDropdown } from 'reactstrap';
 import { CheckCircleTwoTone, CloseCircleTwoTone } from '@ant-design/icons'
 import { Route, Link, Redirect } from "wouter"
-import inicio from './pages/Inicio';
+import Inicio from './pages/Inicio';
 import Reportes from './pages/Reportes';
 import Navbar2 from './layouts/navBar'
 
 Amplify.configure(aws_exports);
 
 
-//<Route from="/" to="/Inicio" />
+<Route path='/Inicio' component={Inicio} />
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
+function App() {
 
-        
-          <Navbar2 />
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <Route path='/Inicio' component={inicio}/>
-        <Route path='/Reportes' component={Reportes}/>
-        
-      </div>
-    );
-  }
+  return (
+    <div className="App">
+
+      
+      <Navbar2 />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Inicio/>
+      <Route path='/Inicio' component={Inicio} />
+      <Route path='/Reportes' component={Reportes} />
+
+    </div>
+  );
 }
+
 
 export default withAuthenticator(App);
