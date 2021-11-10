@@ -104,15 +104,15 @@ function Inicio() {
     });
 
 
-    const [LimitAct, setLimitAct] = useState(["30", "70"]);
+    const [LimitAct, setLimitAct] = useState(["40", "100"]);
 
-    const [LimitHe, setLimitHe] = useState(["0", "250"]);
+    const [LimitHe, setLimitHe] = useState(["60", "100"]);
     const [LNombres, setLNombres] = useState(["name 1", "name 2", "name 3", "name 4", "name 5", "name 6", "name 7", "name 8"])
-    const [colores, setcolores] = useState(["white", "white", "white", "white", "white", "white", "white", "white"])
-    const [colores1, setcolores1] = useState(["white", "white", "white", "white", "white", "white", "white", "white"])
-    const [colores2, setcolores2] = useState(["white", "white", "white", "white", "white", "white", "white", "white"])
-    const [colores3, setcolores3] = useState(["white", "white", "white", "white", "white", "white", "white", "white"])
-    const [colores4, setcolores4] = useState(["white", "white", "white", "white", "white", "white", "white", "white"])
+    const [colores, setcolores] = useState(["white", "white", "white", "white", "white", "white", "white", "white", "white"])
+    const [colores1, setcolores1] = useState(["white", "white", "white", "white", "white", "white", "white", "white", "white"])
+    const [colores2, setcolores2] = useState(["white", "white", "white", "white", "white", "white", "white", "white", "white"])
+    const [colores3, setcolores3] = useState(["white", "white", "white", "white", "white", "white", "white", "white", "white"])
+    const [colores4, setcolores4] = useState(["white", "white", "white", "white", "white", "white", "white", "white", "white"])
 
 
     var requestOptions = {
@@ -338,18 +338,18 @@ function Inicio() {
                         <tr>
                             <th> <InputGroup>
                                 <Button onClick={registrarNOMBRE}>Name</Button>
-                                <Input class="mb-0" id="IDnumero" />
-                                <Input id="Name" />
+                                <Input class="mb-0" id="IDnumero" type="number" placeholder = "1"/>
+                                <Input id="Name" placeholder = "Jhon DOE"/>
                             </InputGroup> </th>
                             <th> <InputGroup>
                                 <Button onClick={registrarlimitesH}>Load</Button>
-                                <Input id="Txt2" />
-                                <Input id="Txt3" />
+                                <Input id="Txt2" type="number" placeholder = "60"/>
+                                <Input id="Txt3"placeholder = "100" />
                             </InputGroup> </th>
                             <th> <InputGroup>
                                 <Button onClick={registrarlimitesACT}>Load</Button>
-                                <Input id="Txt4" />
-                                <Input id="Txt5" />
+                                <Input id="Txt4" type="number"  placeholder = "40"/>
+                                <Input id="Txt5" type="number" placeholder = "100"/>
                             </InputGroup> </th>
 
                         </tr>
