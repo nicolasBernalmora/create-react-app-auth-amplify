@@ -337,19 +337,22 @@ function Inicio() {
 
                         <tr>
                             <th> <InputGroup>
-                                <Button onClick={registrarNOMBRE}>Name</Button>
-                                <Input class="mb-0" id="IDnumero" type="number" placeholder = "1"/>
-                                <Input id="Name" placeholder = "Jhon DOE"/>
+                                
+                                <Input class="mb-0" id="IDnumero" type="number" placeholder = "ID number"/>
+                                <Input id="Name" placeholder = "Name"/>
+                                <Button color="primary" onClick={registrarNOMBRE}>Name</Button>
                             </InputGroup> </th>
                             <th> <InputGroup>
-                                <Button onClick={registrarlimitesH}>Load</Button>
-                                <Input id="Txt2" type="number" placeholder = "60"/>
-                                <Input id="Txt3"placeholder = "100" />
+                                
+                                <Input id="Txt2" type="number" placeholder = "min value"/>
+                                <Input id="Txt3"placeholder = "max value" />
+                                <Button color="primary" onClick={registrarlimitesH}>Load</Button>
                             </InputGroup> </th>
                             <th> <InputGroup>
-                                <Button onClick={registrarlimitesACT}>Load</Button>
-                                <Input id="Txt4" type="number"  placeholder = "40"/>
-                                <Input id="Txt5" type="number" placeholder = "100"/>
+                                
+                                <Input id="Txt4" type="number"  placeholder = "min value"/>
+                                <Input id="Txt5" type="number" placeholder = "max value"/>
+                                <Button color="primary" onClick={registrarlimitesACT}>Load</Button>
                             </InputGroup> </th>
 
                         </tr>

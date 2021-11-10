@@ -29,7 +29,6 @@ function App() {
       <br />
       <br />
       <Inicio/>
-      <Route path='/Inicio' component={Inicio} />
       <Route path='/Reportes' component={Reportes} />
 
     </div>
