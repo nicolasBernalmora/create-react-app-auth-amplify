@@ -137,7 +137,7 @@ function Inicio() {
 
     function llamada() {
 
-        console.log("hagofesh")
+        console.log("hagofetch")
         fetch("https://z0jki0bu60.execute-api.us-east-1.amazonaws.com/dev/API-cosultaTabla?=", requestOptions)
 
             .then(response => response.text())
@@ -171,7 +171,7 @@ function Inicio() {
     const evaluar = (data, h) => {
         console.log("--------------------evaluo")
         var heartdate = parseInt(data["Items"][h]["Heart"]);
-        //console.log(heartdate);
+        //console.log(data["Items"]);
         var Activity = parseInt(data["Items"][h]["Activity"]);
         var tampervar = parseInt(data["Items"][h]["Tamper"]);
         var levelbatery = parseInt(data["Items"][h]["BateryLevel"]);
@@ -368,7 +368,7 @@ function Inicio() {
                             <th>Heart Rate</th>
                             <th>Activity</th>
                             <th>High Rate Alarm </th>
-                            <th>Low rate Alarm </th>
+                            <th>Low Rate Alarm </th>
                             <th>Activity  Alarm </th>
                             <th>Tamper Alarm</th>
                             <th>Battery Alarm</th>
