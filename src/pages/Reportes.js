@@ -1,6 +1,8 @@
 import React from 'react'
 import Chart from "react-google-charts";
 function Reportes() {
+
+    
     return (
         <div>
             <div class="d-flex justify-content-center" >

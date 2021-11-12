@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { Table, InputGroup, Button, Input } from 'reactstrap';
-import { CheckCircleTwoTone, CloseCircleTwoTone } from '@ant-design/icons'
+import { MinusCircleTwoTone, CloseCircleTwoTone } from '@ant-design/icons'
 
 var Nombres = ["name 1", "name 2", "name 3", "name 4", "name 5", "name 6", "name 7", "name 8"];
-var colores1Stados = ["white", "white", "white", "white", "white", "white", "white", "white", "white"];
-var colores2Stados = ["white", "white", "white", "white", "white", "white", "white", "white", "white"];
-var colores3Stados = ["white", "white", "white", "white", "white", "white", "white", "white", "white"];
-var colores4Stados = ["white", "white", "white", "white", "white", "white", "white", "white", "white"];
-var colores5Stados = ["white", "white", "white", "white", "white", "white", "white", "white", "white"];
+var colores1Stados = [<MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />];
+var colores2Stados = [<MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />];
+var colores3Stados = [<MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />];
+var colores4Stados = [<MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />];
+var colores5Stados = [<MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />];
 
 function Inicio() {
     const [items, setItems] = useState({
@@ -108,11 +108,11 @@ function Inicio() {
 
     const [LimitHe, setLimitHe] = useState(["60", "100"]);
     const [LNombres, setLNombres] = useState(["name 1", "name 2", "name 3", "name 4", "name 5", "name 6", "name 7", "name 8"])
-    const [colores, setcolores] = useState(["white", "white", "white", "white", "white", "white", "white", "white", "white"])
-    const [colores1, setcolores1] = useState(["white", "white", "white", "white", "white", "white", "white", "white", "white"])
-    const [colores2, setcolores2] = useState(["white", "white", "white", "white", "white", "white", "white", "white", "white"])
-    const [colores3, setcolores3] = useState(["white", "white", "white", "white", "white", "white", "white", "white", "white"])
-    const [colores4, setcolores4] = useState(["white", "white", "white", "white", "white", "white", "white", "white", "white"])
+    const [colores, setcolores] = useState([<MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />])
+    const [colores1, setcolores1] = useState([<MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />])
+    const [colores2, setcolores2] = useState([<MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />])
+    const [colores3, setcolores3] = useState([<MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />])
+    const [colores4, setcolores4] = useState([<MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />, <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />])
 
 
     var requestOptions = {
@@ -196,14 +196,14 @@ function Inicio() {
         // console.log(parseInt(items["Items"][i]["ID"]))
         if (data < bajo) {
 
-            colores3Stados[id] = "red"
+            colores3Stados[id] = <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="red" />
         }
         else if (data < alto) {
-            colores3Stados[id] = "green"
+            colores3Stados[id] = <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />
         }
         else {
             // console.log("no pase el limite bajo")
-            colores3Stados[id] = "red"
+            colores3Stados[id] = <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="red" />
         }
 
 
@@ -216,27 +216,21 @@ function Inicio() {
         var bajo = parseInt(LimitHe[0]);
         var alto = parseInt(LimitHe[1]);
         var id = parseInt(items["Items"][i]["ID"])
-        // console.log(parseInt(items["Items"][i]["ID"]))
-        if (data < bajo) {
-            //console.log("entre a nivel bajo")
-            //console.log(data)
 
-            colores2Stados[id] = "red"
+        if (data < bajo) {
+
+            colores2Stados[id] = <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="red" />
         }
         else {
-            // console.log("no pase el limite bajo")
-            colores2Stados[id] = "green"
+            colores2Stados[id] = <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />
         }
 
         if (data > alto) {
-            //console.log("alarma nivel alto")
-            // console.log(data)
-
-            colores1Stados[id] = "red"
+            colores1Stados[id] = <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="red" />
         }
         else {
-            //console.log("no pase el limite alto")
-            colores1Stados[id] = "green"
+
+            colores1Stados[id] = <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />
         }
     }
 
@@ -244,21 +238,21 @@ function Inicio() {
         var id = parseInt(items["Items"][i]["ID"])
 
         if (data == 0) {
-            colores4Stados[id] = "green"
+            colores4Stados[id] = <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />
         }
         else {
-            colores4Stados[id] = "red"
+            colores4Stados[id] = <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="red" />
         }
 
     }
     const BatteryAlarm = (data, i) => {
         var id = parseInt(items["Items"][i]["ID"])
         if (data == 0) {
-            colores5Stados[id] = "green"
+            colores5Stados[id] = <MinusCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="white" />
             //console.log(colores5Stados[i])
         }
         else {
-            colores5Stados[id] = "red"
+            colores5Stados[id] = <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor="red" />
 
         }
 
@@ -337,21 +331,21 @@ function Inicio() {
 
                         <tr>
                             <th> <InputGroup>
-                                
-                                <Input class="mb-0" id="IDnumero" type="number" placeholder = "ID number"/>
-                                <Input id="Name" placeholder = "Name"/>
+
+                                <Input class="mb-0" id="IDnumero" type="number" placeholder="ID number" />
+                                <Input id="Name" placeholder="Name" />
                                 <Button color="primary" onClick={registrarNOMBRE}>Name</Button>
                             </InputGroup> </th>
                             <th> <InputGroup>
-                                
-                                <Input id="Txt2" type="number" placeholder = "min value"/>
-                                <Input id="Txt3"placeholder = "max value" />
+
+                                <Input id="Txt2" type="number" placeholder="min value" />
+                                <Input id="Txt3" placeholder="max value" />
                                 <Button color="primary" onClick={registrarlimitesH}>Load</Button>
                             </InputGroup> </th>
                             <th> <InputGroup>
-                                
-                                <Input id="Txt4" type="number"  placeholder = "min value"/>
-                                <Input id="Txt5" type="number" placeholder = "max value"/>
+
+                                <Input id="Txt4" type="number" placeholder="min value" />
+                                <Input id="Txt5" type="number" placeholder="max value" />
                                 <Button color="primary" onClick={registrarlimitesACT}>Load</Button>
                             </InputGroup> </th>
 
@@ -381,11 +375,11 @@ function Inicio() {
                             <td>{LNombres[0]}</td>
                             <td>{items["Items"][2]["Heart"]}</td>
                             <td>{items["Items"][2]["Activity"]}</td>
-                            <td> <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores[1]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores1[1]} /> </td>
-                            <td> <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores2[1]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores3[1]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores4[1]} /> </td>
+                            <td> {colores[1]} </td>
+                            <td>{colores1[1]} </td>
+                            <td> {colores2[1]} </td>
+                            <td>{colores3[1]} </td>
+                            <td>{colores4[1]} </td>
                             <td>{items["Items"][2]["SignalLevel"]}</td>
                         </tr>
                         <tr>
@@ -393,11 +387,11 @@ function Inicio() {
                             <td>{LNombres[1]}</td>
                             <td>{items["Items"][0]["Heart"]}</td>
                             <td>{items["Items"][0]["Activity"]}</td>
-                            <td> <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores[2]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores1[2]} /> </td>
-                            <td> <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores2[2]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores3[2]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores4[2]} /> </td>
+                            <td> {colores[2]} </td>
+                            <td>{colores1[2]} </td>
+                            <td> {colores2[2]} </td>
+                            <td>{colores3[2]} </td>
+                            <td>{colores4[2]} </td>
                             <td>{items["Items"][0]["SignalLevel"]}</td>
                         </tr>
                         <tr>
@@ -405,11 +399,11 @@ function Inicio() {
                             <td>{LNombres[2]}</td>
                             <td>{items["Items"][8]["Heart"]}</td>
                             <td>{items["Items"][8]["Activity"]}</td>
-                            <td> <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores[3]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores1[3]} /> </td>
-                            <td> <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores2[3]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores3[3]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores4[3]} /> </td>
+                            <td> {colores[3]} </td>
+                            <td>{colores1[3]} </td>
+                            <td> {colores2[3]} </td>
+                            <td>{colores3[3]} </td>
+                            <td>{colores4[3]} </td>
                             <td>{items["Items"][8]["SignalLevel"]}</td>
                         </tr>
                         <tr>
@@ -417,11 +411,11 @@ function Inicio() {
                             <td>{LNombres[3]}</td>
                             <td>{items["Items"][6]["Heart"]}</td>
                             <td>{items["Items"][6]["Activity"]}</td>
-                            <td> <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores[4]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores1[4]} /> </td>
-                            <td> <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores2[4]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores3[4]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores4[4]} /> </td>
+                            <td> {colores[4]} </td>
+                            <td>{colores1[4]} </td>
+                            <td> {colores2[4]} </td>
+                            <td>{colores3[4]} </td>
+                            <td>{colores4[4]} </td>
                             <td>{items["Items"][6]["SignalLevel"]}</td>
                         </tr>
                         <tr>
@@ -429,11 +423,11 @@ function Inicio() {
                             <td>{LNombres[4]}</td>
                             <td>{items["Items"][5]["Heart"]}</td>
                             <td>{items["Items"][5]["Activity"]}</td>
-                            <td> <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores[5]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores1[5]} /> </td>
-                            <td> <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores2[5]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores3[5]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores4[5]} /> </td>
+                            <td> {colores[5]} </td>
+                            <td>{colores1[5]} </td>
+                            <td> {colores2[5]} </td>
+                            <td>{colores3[5]} </td>
+                            <td>{colores4[5]} </td>
                             <td>{items["Items"][5]["SignalLevel"]}</td>
                         </tr>
                         <tr>
@@ -441,11 +435,11 @@ function Inicio() {
                             <td>{LNombres[5]}</td>
                             <td>{items["Items"][3]["Heart"]}</td>
                             <td>{items["Items"][3]["Activity"]}</td>
-                            <td> <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores[6]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores1[6]} /> </td>
-                            <td> <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores2[6]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores3[6]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores4[6]} /> </td>
+                            <td> {colores[6]} </td>
+                            <td>{colores1[6]} </td>
+                            <td> {colores2[6]} </td>
+                            <td>{colores3[6]} </td>
+                            <td>{colores4[6]} </td>
                             <td>{items["Items"][3]["SignalLevel"]}</td>
                         </tr>
 
@@ -454,11 +448,11 @@ function Inicio() {
                             <td>{LNombres[6]}</td>
                             <td>{items["Items"][7]["Heart"]}</td>
                             <td>{items["Items"][7]["Activity"]}</td>
-                            <td> <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores[7]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores1[7]} /> </td>
-                            <td> <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores2[7]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores3[7]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores4[7]} /> </td>
+                            <td> {colores[7]} </td>
+                            <td>{colores1[7]} </td>
+                            <td> {colores2[7]} </td>
+                            <td>{colores3[7]} </td>
+                            <td>{colores4[7]} </td>
                             <td>{items["Items"][7]["SignalLevel"]}</td>
                         </tr>
                         <tr>
@@ -466,11 +460,11 @@ function Inicio() {
                             <td>{LNombres[7]}</td>
                             <td>{items["Items"][1]["Heart"]}</td>
                             <td>{items["Items"][1]["Activity"]}</td>
-                            <td> <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores[8]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores1[8]} /> </td>
-                            <td> <CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores2[8]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores3[8]} /> </td>
-                            <td><CloseCircleTwoTone style={{ fontSize: '40px' }} twoToneColor={colores4[8]} /> </td>
+                            <td> {colores[8]} </td>
+                            <td>{colores1[8]} </td>
+                            <td> {colores2[8]} </td>
+                            <td>{colores3[8]} </td>
+                            <td>{colores4[8]} </td>
                             <td>{items["Items"][1]["SignalLevel"]}</td>
                         </tr>
                     </tbody>

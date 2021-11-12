@@ -20,16 +20,23 @@ export default function navBar() {
                 fixed="top"
             >
                 <NavbarBrand href="/Inicio" >
-                Band IoT Dates
+                    Band IoT Dates
                 </NavbarBrand>
-                <NavbarToggler  />
+                <NavbarToggler />
                 <Collapse navbar>
-                    <Nav navbar >
-
-
-
+                    <Nav
+                        className="me-auto"
+                        navbar
+                    >
+                        <NavItem>
+                            <NavLink ></NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink > </NavLink>
+                        </NavItem>
+                        
                     </Nav>
-                    <NavbarText >
+                    <NavbarText  >
                         <AmplifySignOut />
                     </NavbarText>
                 </Collapse>
